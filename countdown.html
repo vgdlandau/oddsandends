@@ -8,8 +8,7 @@
     <style>
 
 body{
-    background-color: white;
-    opacity: 0;
+    background-color: #191919;
 }
   
 #timer {
@@ -29,25 +28,25 @@ body{
 }
 
 .days {
-  background: #EF2F3C;
+  background: #4c4d43;
 }
 
 .hours {
-  background: #eeeeee;
-  color: #183059;
+  background: #4c4d43;
+  color: #eeeeee;
 }
 
 .minutes {
-  background: #276FBF;
+  background: #4c4d43;
 }
 
 .seconds {
-  background: #F0A202;
+  background: #4c4d43;
 }
 
 .numbers {
-  font-family: 'Sans', sans-serif;
-  color:  #183059;
+  font-family: 'Sans', sans-serif, bold;
+  color:  #eeeeee;
   font-size: 4em;
   text-align: center;
 }
@@ -103,9 +102,9 @@ body{
 
 </body>
 <script>
-    const year = new Date().getFullYear();
-const d = new Date('May 1, 2026 23:59:59');
-    d.setUTCDate(1);
+    const year = new Date().getUTCFullYear();
+const myDate = new Date('May 2, 2026 00:59:59');
+
 
 // countdown
 let timer = setInterval(function() {

@@ -46,7 +46,7 @@ body{
 }
 
 .numbers {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sans', sans-serif;
   color:  #183059;
   font-size: 4em;
   text-align: center;
@@ -104,7 +104,8 @@ body{
 </body>
 <script>
     const year = new Date().getFullYear();
-const myDate = new Date('Oct 15, 2024 00:00:00');
+const d = new Date('May 1, 2026 23:59:59');
+    d.setUTCDate(15);
 console.log(myDate);
 
 // countdown
